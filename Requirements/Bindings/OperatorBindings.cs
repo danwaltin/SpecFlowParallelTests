@@ -28,7 +28,19 @@ namespace Requirements.Bindings
 		[When(@"subtracting (.*) from (.*)")]
 		public void WhenSubtractingFrom(double p0, double p1)
 		{
-			_sharedResult.Result = Calculator().Subtract(p0, from: p1);
+			_sharedResult.Result = Calculator().Subtract(p0, p1);
+		}
+
+		[When(@"multiplying (.*) and (.*)")]
+		public void WhenMultiplyingAnd(int p0, int p1)
+		{
+			_sharedResult.Result = Calculator().Multiply(p0, p1);
+		}
+
+		[When(@"dividing (.*) with (.*)")]
+		public void WhenDividingWith(int p0, int p1)
+		{
+			_sharedResult.Result = Calculator().Divide(p0, p1);
 		}
 
 		private SimpleCalculator Calculator() => new SimpleCalculator();

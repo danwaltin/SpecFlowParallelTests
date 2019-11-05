@@ -8,14 +8,24 @@ namespace Calculator
 {
     public class SimpleCalculator
     {
-	    public double Add(double left, double right)
+	    public double Add(double op1, double op2)
 	    {
-		    return left + right;
+		    return op1 + op2;
 	    }
 
-	    public double Subtract(double p, double from)
+	    public double Subtract(double op1, double op2)
 	    {
-		    return from - p;
+		    return op2 - op1;
+	    }
+
+	    public double Multiply(double op1, double op2)
+	    {
+		    return op1 * op2;
+	    }
+
+	    public double Divide(double op1, double op2)
+	    {
+			return op1 / op2;
 	    }
     }
 }
