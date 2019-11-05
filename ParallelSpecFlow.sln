@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29409.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParallelSpecFlow", "ParallelSpecFlow\ParallelSpecFlow.csproj", "{6E3ABD6C-1C65-4EBB-BBB5-D397BEEDEE1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Requirements", "Requirements\Requirements.csproj", "{85BF3483-52C7-4AAA-9F57-26FA0A0F5E4D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6E3ABD6C-1C65-4EBB-BBB5-D397BEEDEE1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E3ABD6C-1C65-4EBB-BBB5-D397BEEDEE1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E3ABD6C-1C65-4EBB-BBB5-D397BEEDEE1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E3ABD6C-1C65-4EBB-BBB5-D397BEEDEE1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85BF3483-52C7-4AAA-9F57-26FA0A0F5E4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85BF3483-52C7-4AAA-9F57-26FA0A0F5E4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85BF3483-52C7-4AAA-9F57-26FA0A0F5E4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85BF3483-52C7-4AAA-9F57-26FA0A0F5E4D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DBCA3AA3-3BD3-447C-85E5-40EF3C716865}
+	EndGlobalSection
+EndGlobal
