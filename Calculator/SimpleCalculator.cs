@@ -27,5 +27,20 @@ namespace Calculator
 	    {
 			return op1 / op2;
 	    }
+
+	    public double Sin(double degrees)
+	    {
+		    return Math.Sin(Radians(degrees));
+	    }
+
+	    public double Cos(double degrees)
+	    {
+		    return Math.Cos(Radians(degrees));
+	    }
+
+	    private double Radians(double degrees)
+	    {
+		    return 2 * Math.PI * degrees / 360.0;
+	    }
     }
 }

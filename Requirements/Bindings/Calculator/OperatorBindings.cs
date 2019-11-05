@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Calculator;
+﻿using Calculator;
 using Requirements.Bindings.SharedState;
 using TechTalk.SpecFlow;
 
-namespace Requirements.Bindings
+namespace Requirements.Bindings.Calculator
 {
 	[Binding]
 	public class OperatorBindings
@@ -32,16 +27,29 @@ namespace Requirements.Bindings
 		}
 
 		[When(@"multiplying (.*) and (.*)")]
-		public void WhenMultiplyingAnd(int p0, int p1)
+		public void WhenMultiplyingAnd(double p0, double p1)
 		{
 			_sharedResult.Result = Calculator().Multiply(p0, p1);
 		}
 
 		[When(@"dividing (.*) with (.*)")]
-		public void WhenDividingWith(int p0, int p1)
+		public void WhenDividingWith(double p0, double p1)
 		{
 			_sharedResult.Result = Calculator().Divide(p0, p1);
 		}
+
+		[When(@"calculating sin for (.*) degrees")]
+		public void WhenCalculatingSinForDegrees(double p0)
+		{
+			_sharedResult.Result = Calculator().Sin(p0);
+		}
+
+		[When(@"calculating cos for (.*) degrees")]
+		public void WhenCalculatingCosForDegrees(double p0)
+		{
+			_sharedResult.Result = Calculator().Cos(p0);
+		}
+
 
 		private SimpleCalculator Calculator() => new SimpleCalculator();
 	}
