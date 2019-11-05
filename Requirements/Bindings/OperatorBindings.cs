@@ -32,6 +32,5 @@ namespace Requirements.Bindings
 		}
 
 		private SimpleCalculator Calculator() => new SimpleCalculator();
-
 	}
 }

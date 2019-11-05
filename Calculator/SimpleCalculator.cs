@@ -10,12 +10,12 @@ namespace Calculator
     {
 	    public double Add(double left, double right)
 	    {
-		    return 0;
+		    return left + right;
 	    }
 
 	    public double Subtract(double p, double from)
 	    {
-		    return 0;
+		    return from - p;
 	    }
     }
 }
