@@ -74,6 +74,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bindings\OperatorBindings.cs" />
+    <Compile Include="Bindings\ResultBindings.cs" />
+    <Compile Include="Bindings\SharedState\SharedResult.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -82,7 +85,10 @@
     <None Include="specflow.json" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Bindings\" />
+    <ProjectReference Include="..\Calculator\Calculator.csproj">
+      <Project>{351CBD45-6AD4-4CC6-9BAB-0A367B79A2CA}</Project>
+      <Name>Calculator</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
